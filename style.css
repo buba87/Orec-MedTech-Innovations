@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #dcdcdc !important;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Carousel */
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Card Layout for Products Page */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dcdcdc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .card-img-top {
+        height: 100px;
+    }
+}
